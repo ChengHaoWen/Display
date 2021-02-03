@@ -1,0 +1,25 @@
+﻿<Window x:Class="WenDisplay2.test5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WenDisplay2"
+        mc:Ignorable="d"
+        Title="test5" Height="450" Width="800">
+    <Grid>
+        <Label Content="測驗者姓名:" HorizontalAlignment="Left" Height="49" Margin="181,116,0,0" VerticalAlignment="Top" Width="165" FontSize="28" FontWeight="Bold"/>
+        <Label Content="30秒二頭肌手臂屈舉測量&#xD;&#xA;           (手稍微向外)" HorizontalAlignment="Center" Height="106" Margin="219,10,160,0" VerticalAlignment="Top" Width="413" FontSize="36" FontWeight="Bold"/>
+        <Label x:Name="Name_02" Content="顯示姓名" HorizontalAlignment="Left" Height="49" Margin="366,116,0,0" VerticalAlignment="Top" Width="157" FontWeight="Bold" FontSize="28"/>
+        <Label Content="次數:" HorizontalAlignment="Left" Height="42" Margin="181,180,0,0" VerticalAlignment="Top" Width="104" FontSize="28" FontWeight="Bold"/>
+        <Label x:Name="count"  Content="0" HorizontalAlignment="Left" Height="42" Margin="391,180,0,0" VerticalAlignment="Top" Width="83" FontSize="28" FontWeight="Bold"/>
+        <Label Content="時間:" HorizontalAlignment="Left" Height="40" Margin="181,247,0,0" VerticalAlignment="Top" Width="79" FontSize="28" FontWeight="Bold"/>
+        <Label x:Name="countdown" Content="30" HorizontalAlignment="Left" Height="40" Margin="379,247,0,0" VerticalAlignment="Top" Width="60" FontSize="28" FontWeight="Bold" RenderTransformOrigin="0.968,0.493"/>
+        <Label Content="提示:" HorizontalAlignment="Left" Height="44" Margin="181,314,0,0" VerticalAlignment="Top" Width="79" FontSize="28" FontWeight="Bold"/>
+        <Label x:Name="hint"  Content="坐在攝影機前開始測驗" HorizontalAlignment="Left" Height="72" Margin="314,306,0,0" VerticalAlignment="Top" Width="443" FontSize="36" FontWeight="Bold" Foreground="#FF0000"/>
+        <Label  x:Name="label4" Content="Label" HorizontalAlignment="Left" Height="29" Margin="703,391,-0.4,0" VerticalAlignment="Top" Width="91"/>
+        <Image x:Name="Tip_picture1" HorizontalAlignment="Left" Height="283" Margin="588,23,-188,0" VerticalAlignment="Top" Width="392" Source="C:\Users\nkust_f435\Desktop\Wen_Display2\手臂屈舉右手單圖.png" RenderTransformOrigin="0.5,0.5" Visibility="Hidden"  />
+        <Image x:Name="Tip_picture2" HorizontalAlignment="Left" Height="309" Margin="576,10,-233,0" VerticalAlignment="Top" Width="449" Source="C:\Users\nkust_f435\Desktop\Wen_Display2\手臂屈舉左手單圖.png" RenderTransformOrigin="0.5,0.5" Visibility="Hidden" />
+        <Image  x:Name="Tip_picture3" HorizontalAlignment="Left" Height="313" Margin="576,6,-182,0" VerticalAlignment="Top" Width="398" Source="C:\Users\nkust_f435\Desktop\Wen_Display2\右手屈舉放下單圖.png" RenderTransformOrigin="0.5,0.5" Visibility="Hidden"/>
+        <Image  x:Name="Tip_picture4" HorizontalAlignment="Left" Height="313" Margin="576,6,-182,0" VerticalAlignment="Top" Width="398" Source="C:\Users\nkust_f435\Desktop\Wen_Display2\左手屈舉放下單圖.png" RenderTransformOrigin="0.5,0.5" Visibility="Hidden"/>
+    </Grid>
+</Window>

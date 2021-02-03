@@ -1,0 +1,52 @@
+﻿<Window x:Class="WenDisplay2.testnormal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WenDisplay2"
+        mc:Ignorable="d"
+        Title="testnormal" Height="554.404" Width="881.916">
+    <Grid>
+        <Label Content="30秒椅子坐立測量" HorizontalAlignment="Left" Height="34" Margin="62,24,0,0" VerticalAlignment="Top" Width="175" FontSize="20" FontWeight="Bold"/>
+        <Button Content="開始測量" HorizontalAlignment="Left" Height="32" Margin="98,99,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.788,0.427" FontWeight="Bold" FontSize="20" Click="Button_Click"/>
+        <GridSplitter Width="5" HorizontalAlignment="Stretch" Margin="238,0,550.6,0" />
+        <Label Content="30秒肩關節測量" HorizontalAlignment="Left" Height="34" Margin="328,24,0,0" VerticalAlignment="Top" Width="179" FontSize="20" FontWeight="Bold"/>
+        <Button Content="一般模式" HorizontalAlignment="Left" Height="32" Margin="370,68,0,0" VerticalAlignment="Top" Width="90" FontSize="20" FontWeight="Bold" Click="Button_Click_1" RenderTransformOrigin="0.69,0.449">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.612"/>
+                    <TranslateTransform X="-0.019" Y="-0.179"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="右手模式" HorizontalAlignment="Left" Height="32" Margin="369,123,0,0" VerticalAlignment="Top" Width="90" FontSize="20" FontWeight="Bold" Click="Button_Click_4" RenderTransformOrigin="0.792,1.106"/>
+        <Button Content="左手模式" HorizontalAlignment="Left" Height="32" Margin="369,176,0,0" VerticalAlignment="Top" Width="90" FontSize="20" FontWeight="Bold" Click="Button_Click_3"/>
+        <GridSplitter Width="5" HorizontalAlignment="Stretch" Margin="529,0,259.6,0" />
+        <Label Content="60秒站立抬膝測量" HorizontalAlignment="Left" Height="34" Margin="617,24,0,0" VerticalAlignment="Top" Width="189" RenderTransformOrigin="0.762,0.548" FontSize="20" FontWeight="Bold"/>
+        <Button Content="一般模式" HorizontalAlignment="Left" Height="32" Margin="677,65,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold" Click="Button_Click_5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.334"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="右腳模式" HorizontalAlignment="Left" Margin="678,119,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="36" Width="89" Click="Button_Click_2"/>
+        <Button Content="左腳模式" HorizontalAlignment="Left" Margin="678,176,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="36" Width="89" Click="Button_Click_6"/>
+        <GridSplitter Grid.Row="1" Height="5" HorizontalAlignment="Stretch" />
+        <Label Content="1.5米坐立繞物測量" HorizontalAlignment="Left" Height="34" Margin="44,288,0,0" VerticalAlignment="Top" Width="193" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.508,0.37"/>
+        <Button Content="開始測量" HorizontalAlignment="Left" Height="32" Margin="85,344,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.788,0.427" FontWeight="Bold" FontSize="20" Click="Button_Click7"/>
+        <Label Content="2分鐘單足立" HorizontalAlignment="Left" Height="34" Margin="654,288,0,0" VerticalAlignment="Top" Width="142" RenderTransformOrigin="0.762,0.548" FontSize="20" FontWeight="Bold"/>
+        <Button Content="右腳模式" HorizontalAlignment="Left" Margin="678,342,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="36" Width="89" Click="Button_Click_10"/>
+        <Button Content="左腳模式" HorizontalAlignment="Left" Margin="677,391,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="36" Width="89" RenderTransformOrigin="0.539,3.652" Click="Button_Click_11"/>
+        <Label Content="30秒二頭肌手臂屈舉測量" HorizontalAlignment="Left" Height="34" Margin="303,288,0,0" VerticalAlignment="Top" Width="238" FontSize="20" FontWeight="Bold"/>
+        <Button Content="右手模式" HorizontalAlignment="Left" Height="32" Margin="369,342,0,0" VerticalAlignment="Top" Width="90" FontSize="20" FontWeight="Bold" Click="Button_Click8"/>
+        <Button Content="左手模式" HorizontalAlignment="Left" Height="32" Margin="369,384,0,0" VerticalAlignment="Top" Width="90" FontSize="20" FontWeight="Bold" Click="Button_Click9"/>
+        <Label Content="測量者姓名" x:Name="Namedisplay"  HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center"  Margin="284,475,329.2,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Width="262" RenderTransformOrigin="0.5,0.5" Cursor="No" IsEnabled="False"/>
+        <Button Content="更換測量者" HorizontalAlignment="Left" Height="40" Margin="746,475,0,0" VerticalAlignment="Top" Width="119" FontWeight="Bold" FontSize="20"  Click="Button_Click18"/>
+    </Grid>
+</Window>

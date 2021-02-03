@@ -1,0 +1,27 @@
+﻿<Window x:Class="WenDisplay2.test2result"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        xmlns:local="clr-namespace:WenDisplay2"
+        mc:Ignorable="d"
+        Title="test2result" Height="450" Width="800">
+    <Grid>
+        <Label Content="30秒肩關節測量" HorizontalAlignment="Center" Height="58" Margin="220,33,160.6,0" VerticalAlignment="Top" Width="413" FontSize="36" FontWeight="Bold"/>
+        <Label Content="測驗結果:" HorizontalAlignment="Left" Height="44" Margin="168,181,0,0" VerticalAlignment="Top" Width="154" FontSize="28" FontWeight="Bold"/>
+        <Label Content="評價:" HorizontalAlignment="Left" Height="44" Margin="168,244,0,0" VerticalAlignment="Top" Width="84" FontSize="28" FontWeight="Bold"/>
+        <Label Content="測驗者姓名:" HorizontalAlignment="Left" Height="42" Margin="168,116,0,0" VerticalAlignment="Top" Width="203" FontSize="28" FontWeight="Bold"/>
+        <Label x:Name="result" Content="Label下" HorizontalAlignment="Left" Height="44" Margin="343,181,0,0" VerticalAlignment="Top" Width="222" FontSize="28" FontWeight="Bold"/>
+        <Label x:Name="goodornot" Content="待定" HorizontalAlignment="Left" Height="57" Margin="343,244,0,0" VerticalAlignment="Top" Width="273" FontSize="28" FontWeight="Bold"/>
+        <Label x:Name="avg"  Content="待定" HorizontalAlignment="Left" Height="51" Margin="168,301,0,0" VerticalAlignment="Top" Width="412" FontSize="28" FontWeight="Bold"/>
+        <Label x:Name="namecheck1" Content="待定" HorizontalAlignment="Left" Height="42" Margin="343,116,0,0" VerticalAlignment="Top" Width="157" FontSize="28" FontWeight="Bold" RenderTransformOrigin="0.366,0.476"/>
+        <Image x:Name="notgood" HorizontalAlignment="Left" Height="100" Margin="500,116,0,0" VerticalAlignment="Top" Width="377" Source="C:\Users\nkust_f435\Desktop\Wen_Display2\not good.png" Visibility="Hidden"/>
+        <Image x:Name="verygood" HorizontalAlignment="Left" Height="100" Margin="500,116,0,0" VerticalAlignment="Top" Width="377" Source="C:\Users\nkust_f435\Desktop\Wen_Display2\very good.jpg" Visibility="Hidden"/>
+        <Image x:Name="good" HorizontalAlignment="Left" Height="100" Margin="500,116,0,0" VerticalAlignment="Top" Width="377" Source="C:\Users\nkust_f435\Desktop\Wen_Display2\good.png" Visibility="Hidden"/>
+        <Button Content="結束" HorizontalAlignment="Left" Height="41" Margin="665,369,0,0" VerticalAlignment="Top" Width="73" FontSize="28" FontWeight="Bold" Click="Button_Click"/>
+        <Button Content="其他動作測試" HorizontalAlignment="Left" Height="41" Margin="442,369,0,0" VerticalAlignment="Top" Width="174" FontSize="28" FontWeight="Bold" Click="Button_Click2"/>
+        
+        <Label Content="次" HorizontalAlignment="Left" Margin="467,182,0,0" VerticalAlignment="Top" Height="43" Width="63" FontSize="28" FontWeight="Bold"/>
+    </Grid>
+</Window>

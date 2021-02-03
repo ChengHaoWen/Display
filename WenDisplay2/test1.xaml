@@ -1,0 +1,30 @@
+﻿<Window x:Class="WenDisplay2.test1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WenDisplay2"
+        mc:Ignorable="d"
+        Title="test1" Height="537" Width="904.4">
+    <Grid Margin="0,0,4,4.8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="743*"/>
+            <ColumnDefinition Width="95*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="測驗者姓名:" HorizontalAlignment="Left" Height="56" Margin="159,116,0,0" VerticalAlignment="Top" Width="165" FontSize="28" FontWeight="Bold"/>
+        <Label Content="30秒椅子坐立測量" HorizontalAlignment="Center" Height="58" Margin="242,33,88,0" VerticalAlignment="Top" Width="413" FontSize="36" FontWeight="Bold"/>
+        <Label x:Name="Name_02" Content="顯示姓名" HorizontalAlignment="Left" Height="56" Margin="329,116,0,0" VerticalAlignment="Top" Width="134" FontWeight="Bold" FontSize="28"/>
+        <Label Content="次數:" HorizontalAlignment="Left" Height="42" Margin="159,172,0,0" VerticalAlignment="Top" Width="104" FontSize="28" FontWeight="Bold"/>
+        <Label x:Name="count"  Content="0" HorizontalAlignment="Left" Height="42" Margin="324,181,0,0" VerticalAlignment="Top" Width="83" FontSize="28" FontWeight="Bold"/>
+        <Label Content="倒數時間:" HorizontalAlignment="Left" Height="40" Margin="159,239,0,0" VerticalAlignment="Top" Width="141" FontSize="28" FontWeight="Bold"/>
+        <Label x:Name="countdown" Content="30" HorizontalAlignment="Left" Height="40" Margin="324,246,0,0" VerticalAlignment="Top" Width="66" FontSize="28" FontWeight="Bold"/>
+        <Label Content="提示:" HorizontalAlignment="Left" Height="66" Margin="159,314,0,0" VerticalAlignment="Top" Width="79" FontSize="28" FontWeight="Bold"/>
+        <Label x:Name="hint"  Content="請坐下以開始測驗" HorizontalAlignment="Left" Height="66" Margin="324,306,0,0" VerticalAlignment="Top" Width="360" FontSize="36" FontWeight="Bold" Foreground="#FF0000"/>
+        <Label  x:Name="label4" Content="Label" HorizontalAlignment="Left" Height="29" Margin="680,385,0,0" VerticalAlignment="Top" Width="91" Grid.ColumnSpan="2" Visibility="Hidden"/>
+        <Label  x:Name="label5" Content="Label" HorizontalAlignment="Left" Height="32" Margin="593,247,0,0" VerticalAlignment="Top" Width="91" Visibility="Hidden"/>
+        <Image x:Name="Tip_picture1" HorizontalAlignment="Left" Height="285" Margin="665,72,-171,0" VerticalAlignment="Top" Width="398" Source="C:\Users\nkust_f435\Desktop\Wen_Display2\椅子站立單圖.png" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Visibility="Hidden"/>
+        <Image  x:Name="Tip_picture2" HorizontalAlignment="Left" Height="316" Margin="627,64,-285,0" VerticalAlignment="Top" Width="550" Source="C:\Users\nkust_f435\Desktop\Wen_Display2\椅子坐下單圖.png" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Visibility="Hidden"/>
+
+
+    </Grid>
+</Window>
